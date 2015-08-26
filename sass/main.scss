@@ -1,0 +1,22 @@
+
+//Makes all Columns Equal
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+// Navigation styling
+nav {
+  border: 2px solid black;
+}
+
+//Styling for center content
+.main {
+  border: 2px solid black;
+}
+
+//Styling for left side content
+.side {
+  border: 2px solid black;
+}

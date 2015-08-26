@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nashville Software School</title>
+  </head>
+  <nav>
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="index.html">View Music</a></li>
+      <li role="presentation"><a href="add.html">Add Music</a></li>
+      <li role="presentation"><a href="#">Fight Me</a></li>
+    </ul>
+  </nav>
+  <div id="cont" class="container-fluid">
+    <div id="rowEq" class="row row-eq-height">
+      <div class="col-xs-2 side">
+        <div class="dropdown btm-marg">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%">
+          Artist
+          <span class="caret"></span>
+          </button>
+          <ul id="artists" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          </ul>
+        </div>
+        <div class="dropdown btm-marg">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%">
+          Album
+          <span class="caret"></span>
+          </button>
+          <ul id="albums" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          </ul>
+        </div>
+        <h5 color: white;> Genre: </h5>
+        <br>
+        <br>
+        <div class="table-responsive">
+          <table class="table">
+            <tr>
+              <td>
+                <input type="checkbox" name="rock" value="rock"> Rock
+              </td>
+              <td>
+                <input type="checkbox" name="classical" value="classical"> Classical
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="pop" value="pop"> Pop
+              </td>
+              <td>
+                <input type="checkbox" name="jazz" value="jazz"> Jazz
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="blues" value="blues"> Blues
+              </td>
+              <td>
+                <input type="checkbox" name="hihop" value="hiphop"> Hip hop
+              </td>
+            </tr>
+          </table>
+        </div>
+        <br>
+      </div>
+      <div ng-app="TodoApp"class="col-xs-10 main">
+        <div id="songList"></div>
+        <section ng-controller="SongCtrl">
+          <h1>{{ title }}</h1>
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  <script src="lib/bower_components/angular/angular.min.js"></script>
+  <script src="lib/bower_components/jquery/dist/jquery.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/Todo.js"></script>
+  <script src="app/controllers/songs.js"></script>
+</body>
+</html>
