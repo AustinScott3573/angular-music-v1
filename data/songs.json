@@ -1,0 +1,20 @@
+{
+  "songs": [{
+        "id": 1,
+        "name": "Nuclear",
+        "artist": "Mike Oldman",
+        "album": "Man on the Rocks"
+    }, {
+        "id": 2,
+        "name": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "album": "The Wall"
+    }, {
+        "id": 3,
+        "name": "Numb",
+        "artist": "Portishead",
+        "album": "Dummy"
+  }]
+
+}
+
